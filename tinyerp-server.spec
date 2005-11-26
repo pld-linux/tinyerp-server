@@ -6,7 +6,7 @@ Release:	0.1
 License:	GPL v2
 Group:		Applications
 Source0:	http://tinyerp.org/download/sources/%{name}-%{version}.tar.gz
-# Source0-md5:	9d4a0d90a29a089368c3fc24c9f4b8bc
+# Source0-md5:	eceb59222b7df18ac157ca50a20e8c67
 URL:		http://tinyerp.org/
 BuildRequires:	python
 BuildRequires:	python-devel
