@@ -60,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/{INSTALL,README*}
 %attr(755,root,root) %{_bindir}/*
-%{py_sitescriptdir}/tinyerp_server
+%{py_sitescriptdir}/tinyerp-server
 %{_mandir}/man?/*
