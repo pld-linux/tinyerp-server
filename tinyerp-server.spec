@@ -14,7 +14,7 @@ BuildRequires:	python-libxml2
 BuildRequires:	python-libxslt
 BuildRequires:	python-psycopg
 BuildRequires:  rpmbuild(macros) >= 1.219
-#Requires:	graphviz
+BuildRequires:	python-pygraphviz
 #Requires:	python-Imaging
 Requires:	python-libxml2
 Requires:	python-libxslt
