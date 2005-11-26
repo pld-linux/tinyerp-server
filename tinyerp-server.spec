@@ -20,7 +20,7 @@ BuildRequires:	python-pydot
 Requires:	python-libxml2
 Requires:	python-libxslt
 Requires:	python-psycopg
-#Requires:	python-pyparsing
+Requires:	python-ReportLab
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
