@@ -16,7 +16,6 @@ BuildRequires:	python-libxslt
 BuildRequires:	python-psycopg
 BuildRequires:  rpmbuild(macros) >= 1.219
 BuildRequires:	python-pydot
-#Requires:	python-Imaging
 Requires:	python-libxml2
 Requires:	python-libxslt
 Requires:	python-psycopg
