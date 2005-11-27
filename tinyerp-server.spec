@@ -14,7 +14,7 @@ BuildRequires:	python-devel
 BuildRequires:	python-libxml2
 BuildRequires:	python-libxslt
 BuildRequires:	python-psycopg
-BuildRequires:  rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	python-pydot
 Requires:	python-libxml2
 Requires:	python-libxslt
@@ -60,13 +60,12 @@ for i in `find -name *.xml`; do
 done
 
 for i in `find -name *.xsl`; do
-        install $i $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
+	install $i $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
 done
 
 for i in `find -name *.sql`; do
-        install $i $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
+	install $i $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
 done
-
 
 #%%find_lang %{name}
 
