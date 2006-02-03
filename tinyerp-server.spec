@@ -2,12 +2,12 @@
 Summary:	Tiny ERP - free ERP and CRM software (server)
 Summary(pl):	Tiny ERP - darmowe oprogramowanie ERP i CRM (serwer)
 Name:		tinyerp-server
-Version:	3.2.0
+Version:	3.2.1
 Release:	0.1
 License:	GPL v2
 Group:		Applications
-Source0:	http://tinyerp.org/download/sources/%{name}-%{version}-rc1.tar.gz
-# Source0-md5:	38d91b235b7e3ec1b1f4ac055a18ca91
+Source0:	http://tinyerp.org/download/sources/%{name}-%{version}.tgz
+# Source0-md5:	4acbbd8e8fac798ea3e9da08e076b465
 Patch0:		%{name}-start.patch
 URL:		http://tinyerp.org/
 BuildRequires:	python
@@ -40,7 +40,7 @@ elastyczne przep³ywy prac, obiektow± bazê danych, dynamiczne GUI,
 konfigurowalne raporty oraz interfejsy SOAP i XML-RPC.
 
 %prep
-%setup -q
+%setup -q -n server
 %patch0 -p1
 
 %install
@@ -53,7 +53,7 @@ python setup.py install \
 
 %py_postclean
 
-install -d $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/addons/{base/report,sale/report,esale,network/report,account/{data,datas},purchase/report,audittrail,scrum,account.old/{datas,report,project},delivery}
+install -d $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/addons/{base/report,edi/{report,wizard},sale/report,esale,network/report,account/{data,datas},purchase/report,audittrail,scrum,account.old/{datas,report,project},delivery}
 
 cd bin/
 for i in `find -name *.xml`; do
