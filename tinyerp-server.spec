@@ -53,7 +53,7 @@ python setup.py install \
 
 %py_postclean
 
-install -d $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/addons/{base/report,edi/{report,wizard},sale/report,esale,network/report,account/{data,datas},purchase/report,audittrail,scrum,account.old/{datas,report,project},delivery}
+install -d $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/addons/{base/report,base_partner_relation,edi/{report,wizard},sale/report,esale,network/report,account/{data,datas},purchase/report,audittrail,scrum,account.old/{datas,report,project},delivery,product,product_electronic,product_expiry}
 
 cd bin/
 for i in `find -name *.xml`; do
