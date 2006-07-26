@@ -15,12 +15,12 @@ BuildRequires:	python-devel
 BuildRequires:	python-libxml2
 BuildRequires:	python-libxslt
 BuildRequires:	python-psycopg
-BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	python-pydot
+BuildRequires:	rpmbuild(macros) >= 1.219
+Requires:	python-ReportLab
 Requires:	python-libxml2
 Requires:	python-libxslt
 Requires:	python-psycopg
-Requires:	python-ReportLab
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,19 +53,19 @@ python setup.py install \
 
 %py_postclean
 
-install -d $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/addons/{base/report,base_partner_relation,edi/{report,wizard},sale/report,esale,network/report,account/{data,datas},purchase/report,audittrail,scrum,account.old/{datas,report,project},delivery,product,product_electronic,product_expiry}
+install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/addons/{base/report,base_partner_relation,edi/{report,wizard},sale/report,esale,network/report,account/{data,datas},purchase/report,audittrail,scrum,account.old/{datas,report,project},delivery,product,product_electronic,product_expiry}
 
 cd bin/
 for i in `find -name *.xml`; do
-	install $i $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
+	install $i $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
 done
 
 for i in `find -name *.xsl`; do
-	install $i $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
+	install $i $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
 done
 
 for i in `find -name *.sql`; do
-	install $i $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
+	install $i $RPM_BUILD_ROOT%{py_sitescriptdir}/%{name}/`echo $i | sed 's/\.//'`
 done
 
 #%%find_lang %{name}
