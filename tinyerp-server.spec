@@ -1,6 +1,6 @@
 # NOTE: NOT USABLE!
 Summary:	Tiny ERP - free ERP and CRM software (server)
-Summary(pl.UTF-8):   Tiny ERP - darmowe oprogramowanie ERP i CRM (serwer)
+Summary(pl.UTF-8):	Tiny ERP - darmowe oprogramowanie ERP i CRM (serwer)
 Name:		tinyerp-server
 Version:	3.2.1
 Release:	0.1
