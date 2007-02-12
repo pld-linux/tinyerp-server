@@ -1,6 +1,6 @@
 # NOTE: NOT USABLE!
 Summary:	Tiny ERP - free ERP and CRM software (server)
-Summary(pl):	Tiny ERP - darmowe oprogramowanie ERP i CRM (serwer)
+Summary(pl.UTF-8):   Tiny ERP - darmowe oprogramowanie ERP i CRM (serwer)
 Name:		tinyerp-server
 Version:	3.2.1
 Release:	0.1
@@ -31,12 +31,12 @@ etc. Technical features include a distributed server, flexible
 workflows, an object database, a dynamic GUI, customizable reports,
 and SOAP and XML-RPC interfaces.
 
-%description -l pl
-Tiny ERP to pe³ny ERP i CRM. G³ówne mo¿liwo¶ci to rozliczenia
-(analityczne i finansowe), zarz±dzanie magazynem, zarz±dzanie
-sprzeda¿± i zakupami, automatyzacja zadañ, kampanie reklamowe, help
-desk, POS itp. Techniczne mo¿liwo¶ci obejmuj± serwer rozproszony,
-elastyczne przep³ywy prac, obiektow± bazê danych, dynamiczne GUI,
+%description -l pl.UTF-8
+Tiny ERP to peÅ‚ny ERP i CRM. GÅ‚Ã³wne moÅ¼liwoÅ›ci to rozliczenia
+(analityczne i finansowe), zarzÄ…dzanie magazynem, zarzÄ…dzanie
+sprzedaÅ¼Ä… i zakupami, automatyzacja zadaÅ„, kampanie reklamowe, help
+desk, POS itp. Techniczne moÅ¼liwoÅ›ci obejmujÄ… serwer rozproszony,
+elastyczne przepÅ‚ywy prac, obiektowÄ… bazÄ™ danych, dynamiczne GUI,
 konfigurowalne raporty oraz interfejsy SOAP i XML-RPC.
 
 %prep
